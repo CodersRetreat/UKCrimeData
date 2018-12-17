@@ -33,6 +33,10 @@ var AllPoliceForces = CrimeService.GetAllForces();
 var PoliceForce = CrimeService.GetSingleForces("wiltshire");
 ```
 
+- **How do I get all crimes for a certain date in a certain location**
+```c#
+var Crimes = CrimeService.GetAllCrimesByPoint("52.9534161", "-1.1492773","2018-10");
+```
 ---
 
 ## License

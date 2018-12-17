@@ -12,7 +12,8 @@ namespace CrimeDataUK.Constants
         public static string ForcesSeniorOfficers = "https://data.police.uk/api/forces/";
         public static string BuildCrimeSearchPoint(string lat, string lon, string date)
         {
-            return "https://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lon + "&date=" + date;
+            var stringurl = "https://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lon + "&date=" + date;
+            return stringurl;
         }
         public static string BuildCrimeSearchPolygon(List<PolygonPoint> points, string date)
         {

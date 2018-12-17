@@ -28,14 +28,12 @@ namespace CrimeDataUK.Services
 
         public static List<Crime> GetAllCrimesByPoint(string longitude,string latitude,string date)
         {
-            string json = UrlHelpers.GetUrlString(ApiUrls.BuildCrimeSearchPoint(longitude,latitude,date));
-            return JsonConvert.DeserializeObject<List<Crime>>(json);
+            return Crime.FromJson(UrlHelpers.GetUrlString(ApiUrls.BuildCrimeSearchPoint(longitude, latitude, date)));
         }
 
         public static List<Crime> GetAllCrimesByPolygon(List<PolygonPoint> points, string date)
         {
-            string json = UrlHelpers.GetUrlString(ApiUrls.BuildCrimeSearchPolygon(points, date));
-            return JsonConvert.DeserializeObject<List<Crime>>(json);
+            return Crime.FromJson(UrlHelpers.GetUrlString(ApiUrls.BuildCrimeSearchPolygon(points, date)));
         }
     }
 }

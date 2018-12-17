@@ -43,8 +43,6 @@
     <Compile Include="Models\SeniorOfficer.cs" />
     <Compile Include="Models\ContactDetails.cs" />
     <Compile Include="Models\Crime.cs" />
-    <Compile Include="Models\Location.cs" />
-    <Compile Include="Models\Street.cs" />
     <Compile Include="Models\PolygonPoint.cs" />
     <Compile Include="Helpers\CoordBuilderHelper.cs" />
   </ItemGroup>
