@@ -1,0 +1,39 @@
+﻿using System;
+using System.Globalization;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+namespace CrimeDataUK.Models
+{
+    public partial class Force
+    {
+        [JsonProperty("id")]
+        public string Id { get; set; }
+
+        [JsonProperty("name")]
+        public string Name { get; set; }
+    }
+
+    public partial class Force
+    {
+        public static Force[] FromJson(string json) => JsonConvert.DeserializeObject<Force[]>(json, CrimeDataUK.Models.Converter.Settings);
+    }
+
+    public static class Serialize
+    {
+        public static string ToJson(this Force[] self) => JsonConvert.SerializeObject(self, CrimeDataUK.Models.Converter.Settings);
+    }
+
+    internal static class Converter
+    {
+        public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
+        {
+            MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
+            DateParseHandling = DateParseHandling.None,
+            Converters =
+            {
+                new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
+            },
+        };
+    }
+}

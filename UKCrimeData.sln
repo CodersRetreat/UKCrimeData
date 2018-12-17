@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrimeDataUK", "CrimeDataUK\CrimeDataUK.csproj", "{8ACF36AF-31AB-4B79-8DEA-A0CC1AF33B64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrimeDataUk_Console", "CrimeDataUk_Console\CrimeDataUk_Console.csproj", "{137FF190-8A06-4320-B555-EEC4F534E5B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ACF36AF-31AB-4B79-8DEA-A0CC1AF33B64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ACF36AF-31AB-4B79-8DEA-A0CC1AF33B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ACF36AF-31AB-4B79-8DEA-A0CC1AF33B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ACF36AF-31AB-4B79-8DEA-A0CC1AF33B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{137FF190-8A06-4320-B555-EEC4F534E5B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{137FF190-8A06-4320-B555-EEC4F534E5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{137FF190-8A06-4320-B555-EEC4F534E5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{137FF190-8A06-4320-B555-EEC4F534E5B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
