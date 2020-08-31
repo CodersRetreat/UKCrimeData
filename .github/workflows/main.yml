@@ -15,6 +15,6 @@ jobs:
     - uses: actions/checkout@main
     - uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.1.x'
+        dotnet-version: '4.7.x'
     - name : Run Project
       run: dotnet build CrimeDataUK
