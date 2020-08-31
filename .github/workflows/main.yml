@@ -17,4 +17,4 @@ jobs:
       with:
         dotnet-version: '3.1.x'
     - name : Run Project
-      run: dotnet build RandomUserLib
+      run: dotnet build CrimeDataUK
