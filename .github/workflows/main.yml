@@ -16,5 +16,16 @@ jobs:
     - uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '3.1.x'
+    - name: Setup Nuget.exe
+      uses: warrenbuckley/Setup-Nuget@v1
+    - name: Version Info
+      run: |
+        nuget help
+        nuget sources
+        dotnet --version
+      shell: cmd 
+    - name: NuGet Restore
+      run: nuget restore
+      shell: cmd
     - name : Run Project
       run: dotnet build CrimeDataUK
