@@ -2,8 +2,6 @@
 
 > This library provides content from UKPolice api covering crime over the UK
 
-- Included in the repo is a test project that acts as a demo to show how this code works.
-
 
 ## Table of Contents (Optional)
 
@@ -13,7 +11,8 @@
 - [FAQ](#faq)
 - [License](#license)
 
-
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+![UK Crime Data](https://github.com/RobertWildgoose/UKCrimeData/workflows/UK%20Crime%20Data/badge.svg?branch=master)
 ---
 
 ## Installation
