@@ -12,7 +12,7 @@
 - [License](#license)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-![UK Crime Data](https://github.com/RobertWildgoose/UKCrimeData/workflows/UK%20Crime%20Data/badge.svg?branch=master)
+- ** [UK Crime Data](https://github.com/RobertWildgoose/UKCrimeData/workflows/UK%20Crime%20Data/badge.svg?branch=master)**
 ---
 
 ## Installation
